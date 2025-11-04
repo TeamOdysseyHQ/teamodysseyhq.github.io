@@ -23,7 +23,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   output: 'static',
-  site: 'https://anveshakrover.github.io',
+  site: 'https://teamodyssey.space',
   integrations: [
     tailwind({
       applyBaseStyles: false,

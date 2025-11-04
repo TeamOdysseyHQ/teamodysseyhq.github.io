@@ -1,13 +1,13 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
+import Layout from "~/layouts/PageLayout.astro";
 
-import Hero from '~/components/widgets/Hero.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import Brands from '~/components/widgets/Brands.astro';
+import Hero from "~/components/widgets/Hero.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+import Brands from "~/components/widgets/Brands.astro";
 
 const metadata = {
-  title: 'Team Odyssey',
+  title: "Team Odyssey",
 };
 ---
 
@@ -16,22 +16,24 @@ const metadata = {
     tagline="Team Odyssey"
     actions={[
       {
-        variant: 'primary',
-        target: '_blank',
-        text: 'Sponsor Us',
-        href: '#contact',
-        icon: 'tabler:heart-handshake',
+        variant: "primary",
+        target: "_blank",
+        text: "Sponsor Us",
+        href: "#contact",
+        icon: "tabler:heart-handshake",
       },
-      { text: 'Learn more', href: '/about' },
+      { text: "Learn more", href: "/about" },
     ]}
-    image={{ src: '~/assets/images/rover.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: "~/assets/images/rover.png", alt: "AstroWind Hero Image" }}
   >
     <Fragment slot="title">
-      Meet our rover <span class="text-secondary dark:text-white">Anveshak</span>
+      Meet our rover <span class="text-secondary dark:text-white">Anveshak</span
+      >
     </Fragment>
 
     <Fragment slot="subtitle">
-      Hey there, we're the official rover team at Amrita University Bangalore. we're competing in the ERC challenge.
+      Hey there, we're the official rover team at Amrita University Bangalore.
+      we're competing in the ERC challenge.
     </Fragment>
 
     <Fragment slot="image"> </Fragment>
@@ -43,32 +45,32 @@ const metadata = {
     icons={[]}
     images={[
       {
-        src: '~/assets/images/lighthouse.png',
-        alt: 'LightHouse',
+        src: "~/assets/images/sponsors/lighthouse.png",
+        alt: "LightHouse",
       },
       {
-        src: '~/assets/images/exel.png',
-        alt: 'Exel Composites',
+        src: "~/assets/images/sponsors/exel.png",
+        alt: "Exel Composites",
       },
       {
-        src: '~/assets/images/kykbearings.png',
-        alt: 'Exel Composites',
+        src: "~/assets/images/sponsors/kykbearings.png",
+        alt: "Exel Composites",
       },
       {
-        src: '~/assets/images/rf-elements.png',
-        alt: 'RF Elements',
+        src: "~/assets/images/sponsors/rf-elements.png",
+        alt: "RF Elements",
       },
       {
-        src: '~/assets/images/arrow.png',
-        alt: 'Arrow Electronics',
+        src: "~/assets/images/sponsors/arrow.png",
+        alt: "Arrow Electronics",
       },
       {
-        src: '~/assets/images/abhis0innochem.png',
-        alt: 'Abhis Innochem',
+        src: "~/assets/images/sponsors/abhis0innochem.png",
+        alt: "Abhis Innochem",
       },
       {
-        src: '~/assets/images/abhyudaya.png',
-        alt: 'Abhyudaya',
+        src: "~/assets/images/sponsors/abhyudaya.png",
+        alt: "Abhyudaya",
       },
     ]}
   />
@@ -81,14 +83,14 @@ const metadata = {
     items={[
       {},
       {
-        title: 'Email Us',
-        icon: 'tabler:mail',
-        href: 'mailto:rover_avvb@blr.amrita.edu',
+        title: "Email Us",
+        icon: "tabler:mail",
+        href: "mailto:rover_avvb@blr.amrita.edu",
       },
       {
-        title: 'Connect With Us',
-        icon: 'tabler:brand-linkedin',
-        href: 'https://www.linkedin.com/in/avv-b-rover-team/',
+        title: "Connect With Us",
+        icon: "tabler:brand-linkedin",
+        href: "https://www.linkedin.com/in/avv-b-rover-team/",
       },
       {},
     ]}

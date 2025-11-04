@@ -24,13 +24,13 @@ export const headerData = {
 export const footerData = {
   links: [{}, {}, {}, {}],
   socialLinks: [
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/team_rover_avvb/' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/team.rover_aseb/' },
     {
       ariaLabel: 'LinkedIn',
       icon: 'tabler:brand-linkedin',
       href: 'https://www.linkedin.com/in/avv-b-rover-team/',
     },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/Anveshak708Odyssey' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/TeamOdysseyHQ/' },
   ],
 };
