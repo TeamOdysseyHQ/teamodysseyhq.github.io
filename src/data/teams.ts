@@ -229,7 +229,7 @@ const teams = {
     },
 
     {
-      name: 'Sanskar',
+      name: 'Shreya',
       role: 'Team Lead',
       subdivision: 'Media',
     },
