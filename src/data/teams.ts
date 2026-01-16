@@ -4,10 +4,14 @@ const teams = {
       name: 'Sree Chaitanya Anisingaraju',
       subdivision: 'Chassis',
     },
+    {
+      name: 'P Advaith',
+      subdivision: 'Chassis',
+    },
 
     {
-      name: 'A.C Anirudh',
-      subdivision: 'Chassis',
+      name: 'S Bhavesh',
+      subdivision: 'Simulation',
     },
 
     {
@@ -22,11 +26,6 @@ const teams = {
 
     {
       name: 'Abhay Aditya Chivukula',
-      subdivision: 'Chassis',
-    },
-
-    {
-      name: 'Abhay Aditya Chivukula',
       role: 'Project Manager',
       subdivision: 'Mechanical',
     },
@@ -34,7 +33,7 @@ const teams = {
 
   Electrical: [
     {
-      name: 'S.J. Yatish',
+      name: 'Roselina Bibin',
       subdivision: 'Communication',
     },
 
@@ -72,12 +71,15 @@ const teams = {
   ],
   Arm: [
     {
-      name: 'Chirayu',
+      name: 'Chirayu C',
       subdivision: 'CS and AI',
     },
-
     {
-      name: 'Sudan',
+    name: 'Harshith R',
+    subdivision: 'CS and AI',
+    },
+    {
+      name: 'Sudhan S',
       subdivision: 'CS and AI',
     },
 
@@ -90,7 +92,6 @@ const teams = {
       name: 'Yedugundla Venkata Sai Sri Harsha',
       subdivision: 'Mechanical',
     },
-
     {
       name: 'Sivakoti Satwik',
       subdivision: 'Mechanical',
@@ -108,17 +109,17 @@ const teams = {
     },
 
     {
-      name: 'Tanish',
+      name: 'Tanish Y',
       subdivision: 'Automation',
     },
 
     {
-      name: 'Parmeshwar',
+      name: 'Parameshwar Reddy',
       subdivision: 'Automation',
     },
 
     {
-      name: 'Shravan',
+      name: 'Shravan Sathyanarayanan',
       subdivision: 'Navigation',
     },
 
@@ -128,12 +129,7 @@ const teams = {
     },
 
     {
-      name: 'Nihal',
-      subdivision: 'Navigation',
-    },
-
-    {
-      name: 'Ekansh',
+      name: 'Ekansh K',
       subdivision: 'Navigation',
     },
     {
@@ -142,24 +138,13 @@ const teams = {
       subdivision: 'CS and AI',
     },
 
-    {
-      name: 'Sowmya',
-      role: 'Project Manager',
-      subdivision: 'CS and AI',
-    },
   ],
   Media: [
     {
-      name: 'Pranav',
+      name: 'Shreya B',
     },
     {
-      name: 'Shreya',
-    },
-    {
-      name: 'Lakshya',
-    },
-    {
-      name: 'Easwer',
+      name: 'Pragathi L',
     },
   ],
   Science: [
@@ -168,11 +153,7 @@ const teams = {
       subdivision: 'Research',
     },
     {
-      name: 'Ashwa',
-      subdivision: 'Research',
-    },
-    {
-      name: 'Lavanya',
+      name: 'Lohithashwa',
       subdivision: 'Research',
     },
     {
@@ -187,19 +168,11 @@ const teams = {
       name: 'Rtamanyu',
       subdivision: 'Development',
     },
-    {
-      name: 'Soumya',
-      subdivision: 'Development',
-    },
-    {
-      name: 'Ashwa',
-      subdivision: 'Development',
-    },
   ],
 
   Mentors: [
     {
-      name: 'Nippun Kumar A A',
+      name: 'Dr. Rajesh M',
       role: 'Mentor',
     },
   ],
@@ -209,7 +182,10 @@ const teams = {
       name: 'Andrew Tom',
       role: 'Team Lead',
     },
-
+    {
+      name: 'Adithya Nair',
+      role: 'CS&AI - Automation',
+    },
     {
       name: 'Ruthvik',
       role: 'Team Lead',
