@@ -18,13 +18,17 @@ export const headerData = {
       text: 'Blog',
       href: '/blog',
     },
+    {
+      text: 'Links',
+      href: '/links',
+    },
   ],
 };
 
 export const footerData = {
   links: [{}, {}, {}, {}],
   socialLinks: [
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/team.rover_aseb/' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/teamodysseyhq' },
     {
       ariaLabel: 'LinkedIn',
       icon: 'tabler:brand-linkedin',
