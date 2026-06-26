@@ -1,31 +1,53 @@
-const teams = {
+/*
+
+Record:
+me@csral.dev: removed subdivision field from each entry as no information regarding this was provided.
+              Check commit: 4f469dc for previous entries which includes subdivision
+
+*/
+
+type SubdivisionEntries = 'CS & AI' | 'Mechanical' | 'Science' | 'Media' | 'EC & EE';
+type RoleEntries = 'Team Lead' | 'Technical Lead' | 'Administrative Lead' | 'Project Manager' | 'Member' | 'Mentor';
+
+interface TeamEntry {
+  name: string;
+  subdivision?: SubdivisionEntries;
+  role: RoleEntries;
+}
+
+const teams : Record<string, TeamEntry[]> = {
   Mechanical: [
     {
-      name: 'Sree Chaitanya Anisingaraju',
-      subdivision: 'Chassis',
+      name: 'Tejasvi Maligi',
+      role: 'Member'
     },
     {
-      name: 'P Advaith',
-      subdivision: 'Chassis',
-    },
-
-    {
-      name: 'S Bhavesh',
-      subdivision: 'Simulation',
+      name: 'Korivi Susruth Achinthya',
+      role: 'Member'
     },
 
     {
-      name: 'Sreehitha Challam',
-      subdivision: 'Chassis',
+      name: 'Vishal Reddy B',
+      role: 'Member'
     },
 
     {
-      name: 'Chaganti Shanmukh Narayana',
-      subdivision: 'Chassis',
+      name: 'T Sathwik Reddy',
+      role: 'Member'
     },
 
     {
-      name: 'Abhay Aditya Chivukula',
+      name: 'K UDAY VIKAS',
+      role: 'Member'
+    },
+
+    {
+      name: 'Roydon Vilber Rodrigues',
+      role: 'Project Manager',
+      subdivision: 'Mechanical',
+    },
+    {
+      name: 'Naga Vaishnavi',
       role: 'Project Manager',
       subdivision: 'Mechanical',
     },
@@ -33,227 +55,222 @@ const teams = {
 
   Electrical: [
     {
-      name: 'Roselina Bibin',
-      subdivision: 'Communication',
+      name: 'Deekshita Perala',
+      role: 'Member'
     },
 
     {
-      name: 'Valluru Hanish Sai',
-      subdivision: 'Communication',
+      name: 'Maanasha Ravichandran',
+      role: 'Member'
     },
 
     {
-      name: 'Krishnapriya Vinod Pillai',
-      subdivision: 'Embedded',
+      name: 'Jhansi',
+      role: 'Member'
     },
 
     {
-      name: 'Reyvanth R V',
-      subdivision: 'Embedded',
+      name: 'Ashish',
+      role: 'Member'
     },
 
     {
-      name: 'Lohithashwa Talamanchi',
-      subdivision: 'Embedded',
+      name: 'Haasini',
+      role: 'Member'
     },
 
     {
-      name: 'Bhargavi Paidi',
+      name: 'Sri Lekha K',
+      role: 'Member'
+    },
+
+    {
+      name: 'Nithilan RameshKumar',
+      role: 'Member'
+    },
+
+    {
+      name: 'Shainehaa VT',
       role: 'Project Manager',
-      subdivision: 'Electrical',
+      subdivision: 'EC & EE',
     },
 
     {
       name: 'S.J. Yatish',
       role: 'Project Manager',
-      subdivision: 'Electrical',
+      subdivision: 'EC & EE',
     },
   ],
-  Arm: [
-    {
-      name: 'Chirayu C',
-      subdivision: 'CS and AI',
-    },
-    {
-    name: 'Harshith R',
-    subdivision: 'CS and AI',
-    },
-    {
-      name: 'Sudhan S',
-      subdivision: 'CS and AI',
-    },
 
-    {
-      name: 'Prakhar Shrivastav',
-      subdivision: 'Electrical',
-    },
-
-    {
-      name: 'Yedugundla Venkata Sai Sri Harsha',
-      subdivision: 'Mechanical',
-    },
-    {
-      name: 'Sivakoti Satwik',
-      subdivision: 'Mechanical',
-    },
-  ],
   'CS and AI': [
+
     {
-      name: 'Adithya Nair',
-      subdivision: 'Automation',
+      name: 'C. Harshith Reddy',
+      role: 'Member'
     },
 
     {
-      name: 'Chaturya',
-      subdivision: 'Automation',
+      name: 'Satya Srinivas Paladugu',
+      role: 'Member'
     },
 
     {
-      name: 'Tanish Y',
-      subdivision: 'Automation',
+      name: 'Manasvini Kandikonda',
+      role: 'Member'
     },
 
     {
-      name: 'Parameshwar Reddy',
-      subdivision: 'Automation',
+      name: 'Shaurya Pandey',
+      role: 'Member'
     },
 
     {
-      name: 'Shravan Sathyanarayanan',
-      subdivision: 'Navigation',
+      name: 'K Deepti',
+      role: 'Member'
     },
 
     {
-      name: 'Haripriya',
-      subdivision: 'Navigation',
+      name: 'G Akhileshwar Reddy',
+      role: 'Member'
     },
 
     {
-      name: 'Ekansh K',
-      subdivision: 'Navigation',
+      name: 'Chirayu Nilesh Chaudhari',
+      role: 'Member'
     },
+
     {
-      name: 'Vardhan',
+      name: 'Niyatee Santosh Gamre',
+      role: 'Member'
+    },
+
+    {
+      name: 'Manya Kumar',
+      role: 'Member'
+    },
+
+    {
+      name: 'Gokul Krishna M',
       role: 'Project Manager',
-      subdivision: 'CS and AI',
+      subdivision: 'CS & AI',
+    },
+
+    {
+      name: 'Jahnavi S',
+      role: 'Project Manager',
+      subdivision: 'CS & AI',
     },
 
   ],
+  
   Media: [
     {
-      name: 'Shreya B',
+      name: 'Kokkalla Akshaya',
+      role: 'Member'
     },
     {
-      name: 'Pragathi L',
+      name: 'Janya Billa',
+      role: 'Member'
     },
   ],
+
   Science: [
     {
-      name: 'Atharv',
-      subdivision: 'Research',
+      name: 'Hanish',
+      role: 'Member'
     },
     {
-      name: 'Lohithashwa',
-      subdivision: 'Research',
+      name: 'Roselina',
+      role: 'Member'
     },
     {
-      name: 'Tarun',
-      subdivision: 'Research',
+      name: 'roshni',
+      role: 'Member'
     },
     {
-      name: 'Praneeth',
-      subdivision: 'Development',
+      name: 'H.S Tarun',
+      role: 'Member'
     },
+
     {
       name: 'Rtamanyu',
-      subdivision: 'Development',
+      role: 'Member'
     },
+
+    {
+      name: 'Babitha',
+      role: 'Member'
+    },
+
+    {
+      name: 'G Akhileshwar Reddy',
+      role: 'Member'
+    },
+
+    {
+      name: 'Kalyani Deepu Narayanan',
+      role: 'Member'
+    },
+
+    {
+      name: 'Harshil Reddy',
+      role: 'Project Manager',
+      subdivision: 'Science',
+    },
+
+    {
+      name: 'Prithvi S',
+      role: 'Project Manager',
+      subdivision: 'Science',
+    }
+
   ],
 
   Mentors: [
     {
-      name: 'Dr. Rajesh M',
+      name: 'Dr. Kiran Kumar',
       role: 'Mentor',
     },
   ],
 
   TeamLead: [
     {
-      name: 'Andrew Tom',
+      name: 'Shrivardhan',
+      role: 'Administrative Lead',
+    },
+
+    {
+      name: 'Ekansh',
+      role: 'Technical Lead',
+    },
+
+    {
+      name: 'Chaturya',
       role: 'Team Lead',
+      subdivision: 'CS & AI'
     },
     {
-      name: 'Adithya Nair',
-      role: 'CS&AI - Automation',
+      name: 'Lohitashwa Talamanchi',
+      role: 'Team Lead',
+      subdivision: 'Science',
     },
+
     {
-      name: 'Ruthvik',
+      name: 'Prakhar',
+      role: 'Team Lead',
+      subdivision: 'EC & EE',
+    },
+
+    {
+      name: 'M Nikhil',
       role: 'Team Lead',
       subdivision: 'Mechanical',
     },
 
     {
-      name: 'K Aruthra',
-      role: 'Team Lead',
-      subdivision: 'Electrical',
-    },
-
-    {
-      name: 'Amara Pranav',
-      role: 'Team Lead',
-      subdivision: 'CS and AI',
-    },
-
-    {
-      name: 'Shreya',
+      name: 'Pragathi L',
       role: 'Team Lead',
       subdivision: 'Media',
-    },
-
-    {
-      name: 'Paida Advaith',
-      role: 'Team Leader',
-      subdivision: 'Mechanical - Chassis',
-    },
-
-    {
-      name: 'Dhipin Krishna P',
-      role: 'Team Leader',
-      subdivision: 'Electrical - Communication',
-    },
-
-    {
-      name: 'Dinesh Challagolla',
-      role: 'Team Leader',
-      subdivision: 'Electrical - Embedded',
-    },
-
-    {
-      name: 'Potlapalli Greeshma',
-      role: 'Team Leader',
-      subdivision: 'Electrical - Science',
-    },
-
-    {
-      name: 'Harshada',
-      role: 'Team Leader',
-      subdivision: 'CS and AI - ARM',
-    },
-
-    {
-      name: 'Manan Tulsian',
-      role: 'Team Leader',
-      subdivision: 'Electrical - ARM',
-    },
-    {
-      name: 'Batchu B V Aashish',
-      role: 'Team Leader',
-      subdivision: 'Mechanical - ARM',
-    },
-    {
-      name: 'Greeshma',
-      role: 'Team Leader',
-      subdivision: 'Science',
     },
   ],
 };
