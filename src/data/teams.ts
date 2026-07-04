@@ -15,7 +15,7 @@ interface TeamEntry {
   role: RoleEntries;
 }
 
-const teams : Record<string, TeamEntry[]> = {
+const teams: Record<string, TeamEntry[]> = {
   Mechanical: [
     {
       name: 'Tejasvi Maligi',
@@ -162,7 +162,7 @@ const teams : Record<string, TeamEntry[]> = {
     },
 
   ],
-  
+
   Media: [
     {
       name: 'Kokkalla Akshaya',
