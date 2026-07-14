@@ -765,7 +765,8 @@ function initials(name: string) {
 /* ─────────────────────────── CANVAS CANVAS ─────────────────────────────── */
 .org-canvas {
   width: 100%;
-  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 3rem 2rem 4rem;
   border-radius: 1rem;
   border: 1px solid #e2e8f0;
@@ -788,8 +789,10 @@ function initials(name: string) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100%;
+  width: max-content;
+  min-width: 100%;
   margin: 0 auto;
+  padding: 0 120px;
 }
 
 /* Root Row (Technical Lead & staff Administrative Lead) */
@@ -1156,5 +1159,32 @@ function initials(name: string) {
   background: #4f46e5;
   color: #ffffff;
   border-color: #4f46e5;
+}
+
+@media (max-width: 1024px) {
+  .team-header {
+    padding: 2rem 1rem 1.5rem;
+  }
+  .org-wrap {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .mentor-corner {
+    position: relative;
+    top: 0;
+    right: 0;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .mentor-card {
+    width: 195px;
+  }
+  .org-canvas {
+    padding: 2rem 1rem;
+  }
+  .grid-section {
+    padding: 0 1rem;
+  }
 }
 </style>
