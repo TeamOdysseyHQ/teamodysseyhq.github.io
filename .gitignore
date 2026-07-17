@@ -11,6 +11,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Wrangler cache files
+.wrangler/
 
 # environment variables
 .env
