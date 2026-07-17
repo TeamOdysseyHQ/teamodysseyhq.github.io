@@ -1,69 +1,36 @@
 ---
 import Layout from "~/layouts/PageLayout.astro";
 
-import Hero from "~/components/widgets/Hero.astro";
-import CallToAction from "~/components/widgets/CallToAction.astro";
-import Features3 from "~/components/widgets/Features3.astro";
-import Brands from "~/components/widgets/Brands.astro";
-
 const metadata = {
-  title: "Team Odyssey",
+  title: "Team Odyssey — Records",
 };
 ---
 
 <Layout metadata={metadata}>
-  <Hero
-    tagline="Team Odyssey"
-    actions={[
-      {
-        variant: "primary",
-        target: "_blank",
-        text: "Sponsor Us",
-        href: "#contact",
-        icon: "tabler:heart-handshake",
-      },
-      { text: "Learn more", href: "/about" },
-    ]}
-    image={{
-      src: "~/assets/images/rover.png",
-      alt: "Team Odyssey rover",
-      width: 1368,
-      height: 1544,
-      aspectRatio: "1368:1544",
-      layout: "responsive",
-      class: "mx-auto w-full h-auto max-w-4xl object-contain",
-    }}
-  >
-    <Fragment slot="title">
-      Meet our rover <span class="text-secondary dark:text-white">Skanda</span>
-    </Fragment>
 
-    <Fragment slot="subtitle">
-      Hey there, we're the official rover team at Amrita University Bangalore.
-      We're finalists for IRC 2026.
-    </Fragment>
+  <section class="flex flex-col items-center justify-center min-h-[70vh] gap-6 px-6 text-center">
 
-    <Fragment slot="image"> </Fragment>
-  </Hero>
+    <h1 class="text-4xl font-bold tracking-tight">
+      Records Page
+    </h1>
 
-  <Features3
-    title="Sponsor Us"
-    subtitle="Get in touch with us to discuss ways you can help fund our efforts."
-    columns={4}
-    id="contact"
-    items={[
-      {},
-      {
-        title: "Email Us",
-        icon: "tabler:mail",
-        href: "mailto:rover_avvb@blr.amrita.edu",
-      },
-      {
-        title: "Connect With Us",
-        icon: "tabler:brand-linkedin",
-        href: "https://www.linkedin.com/in/avv-b-rover-team/",
-      },
-      {},
-    ]}
-  />
+    <p class="text-lg text-muted dark:text-slate-400 max-w-md">
+      View the progress of this website across multiple years.
+    </p>
+
+    <ul class="flex flex-col gap-2 mt-2">
+      <li>
+        <a href="http://2026.teamodyssey.space/" class="text-primary underline hover:opacity-80 transition-opacity">
+          IRC 2026
+        </a>
+      </li>
+      <li>
+        <a href="http://teamodyssey.space/" class="text-primary underline hover:opacity-80 transition-opacity">
+          Current
+        </a>
+      </li>
+    </ul>
+
+  </section>
+
 </Layout>
