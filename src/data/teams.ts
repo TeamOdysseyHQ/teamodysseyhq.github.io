@@ -1,243 +1,261 @@
-/*
-
-Record:
-me@csral.dev: removed subdivision field from each entry as no information regarding this was provided.
-              Check commit: 4f469dc for previous entries which includes subdivision
-
-*/
-
-export type RoleEntries = 'Team Lead' | 'Technical Lead' | 'Administrative Lead' | 'Project Manager' | 'Member' | 'Mentor';
-export type SubdivisionEntries = 'CS & AI' | 'Mechanical' | 'Science' | 'Media' | 'EC & EE';
-
-export interface TeamMember {
-  name: string;
-  role: RoleEntries;
-  subdivision?: SubdivisionEntries;
-  speciality: string | null;
-  about: string | null;
-  photo?: string | null; // Filename (e.g. 'john-doe.jpg') placed in src/data/profilepic/
-  socials: {
-    github?: string;
-    linkedin?: string;
-    email?: string;
-  };
-}
-
-const teamData: Record<string, TeamMember[]> = {
+const teams = {
   Mechanical: [
     {
-      name: 'Tejasvi Maligi', role: 'Member', subdivision: 'Mechanical', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'tejasvi@rovah.org' }
+      name: 'Sree Chaitanya Anisingaraju',
+      subdivision: 'Chassis',
     },
     {
-      name: 'Korivi Susruth Achinthya', role: 'Member', subdivision: 'Mechanical', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'susruth@rovah.org' }
+      name: 'P Advaith',
+      subdivision: 'Chassis',
     },
+
     {
-      name: 'Vishal Reddy B', role: 'Member', subdivision: 'Mechanical', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'vishal@rovah.org' }
+      name: 'S Bhavesh',
+      subdivision: 'Simulation',
     },
+
     {
-      name: 'T Sathwik Reddy', role: 'Member', subdivision: 'Mechanical', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'sathwik@rovah.org' }
+      name: 'Sreehitha Challam',
+      subdivision: 'Chassis',
     },
+
     {
-      name: 'K Uday Vikas', role: 'Member', subdivision: 'Mechanical', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'uday@rovah.org' }
+      name: 'Chaganti Shanmukh Narayana',
+      subdivision: 'Chassis',
+    },
+
+    {
+      name: 'Abhay Aditya Chivukula',
+      role: 'Project Manager',
+      subdivision: 'Mechanical',
     },
   ],
 
   Electrical: [
     {
-      name: 'Deekshita Perala', role: 'Member', subdivision: 'EC & EE', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'deekshita@rovah.org' }
+      name: 'Roselina Bibin',
+      subdivision: 'Communication',
     },
+
     {
-      name: 'Maanasha Ravichandran', role: 'Member', subdivision: 'EC & EE', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'maanasha@rovah.org' }
+      name: 'Valluru Hanish Sai',
+      subdivision: 'Communication',
     },
+
     {
-      name: 'Jhansi', role: 'Member', subdivision: 'EC & EE', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'jhansi@rovah.org' }
+      name: 'Krishnapriya Vinod Pillai',
+      subdivision: 'Embedded',
     },
+
     {
-      name: 'Ashish', role: 'Member', subdivision: 'EC & EE', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'ashish@rovah.org' }
+      name: 'Reyvanth R V',
+      subdivision: 'Embedded',
     },
+
     {
-      name: 'Haasini', role: 'Member', subdivision: 'EC & EE', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'haasini@rovah.org' }
+      name: 'Lohithashwa Talamanchi',
+      subdivision: 'Embedded',
     },
+
     {
-      name: 'Sri Lekha K', role: 'Member', subdivision: 'EC & EE', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'srilekha@rovah.org' }
+      name: 'Bhargavi Paidi',
+      role: 'Project Manager',
+      subdivision: 'Electrical',
     },
+
     {
-      name: 'Nithilan RameshKumar', role: 'Member', subdivision: 'EC & EE', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'nithilan@rovah.org' }
+      name: 'S.J. Yatish',
+      role: 'Project Manager',
+      subdivision: 'Electrical',
     },
   ],
+  Arm: [
+    {
+      name: 'Chirayu C',
+      subdivision: 'CS and AI',
+    },
+    {
+    name: 'Harshith R',
+    subdivision: 'CS and AI',
+    },
+    {
+      name: 'Sudhan S',
+      subdivision: 'CS and AI',
+    },
 
+    {
+      name: 'Prakhar Shrivastav',
+      subdivision: 'Electrical',
+    },
+
+    {
+      name: 'Yedugundla Venkata Sai Sri Harsha',
+      subdivision: 'Mechanical',
+    },
+    {
+      name: 'Sivakoti Satwik',
+      subdivision: 'Mechanical',
+    },
+  ],
   'CS and AI': [
     {
-      name: 'C. Harshith Reddy', role: 'Member', subdivision: 'CS & AI', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'harshith@rovah.org' }
+      name: 'Adithya Nair',
+      subdivision: 'Automation',
     },
-    {
-      name: 'Satya Srinivas Paladugu', role: 'Member', subdivision: 'CS & AI', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'satya@rovah.org' }
-    },
-    {
-      name: 'Manasvini Kandikonda', role: 'Member', subdivision: 'CS & AI', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'manasvini@rovah.org' }
-    },
-    {
-      name: 'Shaurya Pandey', role: 'Member', subdivision: 'CS & AI', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'shaurya@rovah.org' }
-    },
-    {
-      name: 'K Deepti', role: 'Member', subdivision: 'CS & AI', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'deepti@rovah.org' }
-    },
-    {
-      name: 'G Akhileshwar Reddy', role: 'Member', subdivision: 'CS & AI', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'akhileshwar@rovah.org' }
-    },
-    {
-      name: 'Chirayu Nilesh Chaudhari', role: 'Member', subdivision: 'CS & AI', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'chirayu@rovah.org' }
-    },
-    {
-      name: 'Niyatee Santosh Gamre', role: 'Member', subdivision: 'CS & AI', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'niyatee@rovah.org' }
-    },
-    {
-      name: 'Manya Kumar', role: 'Member', subdivision: 'CS & AI', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'manya@rovah.org' }
-    },
-  ],
 
+    {
+      name: 'Chaturya',
+      subdivision: 'Automation',
+    },
+
+    {
+      name: 'Tanish Y',
+      subdivision: 'Automation',
+    },
+
+    {
+      name: 'Parameshwar Reddy',
+      subdivision: 'Automation',
+    },
+
+    {
+      name: 'Shravan Sathyanarayanan',
+      subdivision: 'Navigation',
+    },
+
+    {
+      name: 'Haripriya',
+      subdivision: 'Navigation',
+    },
+
+    {
+      name: 'Ekansh K',
+      subdivision: 'Navigation',
+    },
+    {
+      name: 'Vardhan',
+      role: 'Project Manager',
+      subdivision: 'CS and AI',
+    },
+
+  ],
   Media: [
     {
-      name: 'Kokkalla Akshaya', role: 'Member', subdivision: 'Media', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'akshaya@rovah.org' }
+      name: 'Shreya B',
     },
     {
-      name: 'Janya Billa', role: 'Member', subdivision: 'Media', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'janya@rovah.org' }
+      name: 'Pragathi L',
     },
   ],
-
   Science: [
     {
-      name: 'Hanish', role: 'Member', subdivision: 'Science', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'hanish@rovah.org' }
+      name: 'Atharv',
+      subdivision: 'Research',
     },
     {
-      name: 'Roselina', role: 'Member', subdivision: 'Science', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'roselina@rovah.org' }
+      name: 'Lohithashwa',
+      subdivision: 'Research',
     },
     {
-      name: 'Roshni', role: 'Member', subdivision: 'Science', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'roshni@rovah.org' }
+      name: 'Tarun',
+      subdivision: 'Research',
     },
     {
-      name: 'H.S Tarun', role: 'Member', subdivision: 'Science', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'tarun@rovah.org' }
+      name: 'Praneeth',
+      subdivision: 'Development',
     },
     {
-      name: 'Rtamanyu', role: 'Member', subdivision: 'Science', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'rtamanyu@rovah.org' }
-    },
-    {
-      name: 'Babitha', role: 'Member', subdivision: 'Science', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'babitha@rovah.org' }
-    },
-    {
-      name: 'G Akhileshwar Reddy', role: 'Member', subdivision: 'Science', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'akhileshwar_s@rovah.org' }
-    },
-    {
-      name: 'Kalyani Deepu Narayanan', role: 'Member', subdivision: 'Science', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'kalyani@rovah.org' }
+      name: 'Rtamanyu',
+      subdivision: 'Development',
     },
   ],
 
   Mentors: [
     {
-      name: 'Dr. Kiran Kumar', role: 'Mentor', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'kiran@rovah.org' }
+      name: 'Dr. Rajesh M',
+      role: 'Mentor',
     },
   ],
 
   TeamLead: [
     {
-      name: 'Shrivardhan', role: 'Administrative Lead', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'shrivardhan@rovah.org' }
+      name: 'Andrew Tom',
+      role: 'Team Lead',
     },
     {
-      name: 'Ekansh', role: 'Technical Lead', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'ekansh@rovah.org' }
+      name: 'Adithya Nair',
+      role: 'CS&AI - Automation',
     },
     {
-      name: 'Chaturya', role: 'Team Lead', subdivision: 'CS & AI', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'chaturya@rovah.org' }
+      name: 'Ruthvik',
+      role: 'Team Lead',
+      subdivision: 'Mechanical',
+    },
+
+    {
+      name: 'K Aruthra',
+      role: 'Team Lead',
+      subdivision: 'Electrical',
+    },
+
+    {
+      name: 'Amara Pranav',
+      role: 'Team Lead',
+      subdivision: 'CS and AI',
+    },
+
+    {
+      name: 'Shreya',
+      role: 'Team Lead',
+      subdivision: 'Media',
+    },
+
+    {
+      name: 'Paida Advaith',
+      role: 'Team Leader',
+      subdivision: 'Mechanical - Chassis',
+    },
+
+    {
+      name: 'Dhipin Krishna P',
+      role: 'Team Leader',
+      subdivision: 'Electrical - Communication',
+    },
+
+    {
+      name: 'Dinesh Challagolla',
+      role: 'Team Leader',
+      subdivision: 'Electrical - Embedded',
+    },
+
+    {
+      name: 'Potlapalli Greeshma',
+      role: 'Team Leader',
+      subdivision: 'Electrical - Science',
+    },
+
+    {
+      name: 'Harshada',
+      role: 'Team Leader',
+      subdivision: 'CS and AI - ARM',
+    },
+
+    {
+      name: 'Manan Tulsian',
+      role: 'Team Leader',
+      subdivision: 'Electrical - ARM',
     },
     {
-      name: 'Lohitashwa Talamanchi', role: 'Team Lead', subdivision: 'Science', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'lohitashwa@rovah.org' }
+      name: 'Batchu B V Aashish',
+      role: 'Team Leader',
+      subdivision: 'Mechanical - ARM',
     },
     {
-      name: 'Prakhar', role: 'Team Lead', subdivision: 'EC & EE', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'prakhar@rovah.org' }
-    },
-    {
-      name: 'M Nikhil', role: 'Team Lead', subdivision: 'Mechanical', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'nikhil@rovah.org' }
-    },
-    {
-      name: 'Pragathi L', role: 'Team Lead', subdivision: 'Media', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'pragathi@rovah.org' }
+      name: 'Greeshma',
+      role: 'Team Leader',
+      subdivision: 'Science',
     },
   ],
-  'Project Manager': [
-    {
-      name: 'Roydon Vilber Rodrigues', role: 'Project Manager', subdivision: 'Mechanical', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'roydon@rovah.org' }
-    },
-    {
-      name: 'Naga Vaishnavi', role: 'Project Manager', subdivision: 'Mechanical', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'vaishnavi@rovah.org' }
-    },
-    
-    {
-      name: 'Shainehaa VT', role: 'Project Manager', subdivision: 'EC & EE', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'shainehaa@rovah.org' }
-    },
-    {
-      name: 'S.J. Yatish', role: 'Project Manager', subdivision: 'EC & EE', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'yatish@rovah.org' }
-    },
-    
-    {
-      name: 'Gokul Krishna M', role: 'Project Manager', subdivision: 'CS & AI', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'gokul@rovah.org' }
-    },
-    {
-      name: 'Jahnavi S', role: 'Project Manager', subdivision: 'CS & AI', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'jahnavi@rovah.org' }
-    },
-    
-    {
-      name: 'Harshil Reddy', role: 'Project Manager', subdivision: 'Science', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'harshil@rovah.org' }
-    },
-    {
-      name: 'Prithvi S', role: 'Project Manager', subdivision: 'Science', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'prithvi@rovah.org' }
-    },
-
-  ]
 };
 
-export default teamData;
+export default teams;
