@@ -22,6 +22,10 @@ export const headerData = {
       text: 'Links',
       href: '/links',
     },
+    {
+      text: 'Records',
+      href: 'http://records.teamodyssey.space/'
+    }
   ],
 };
 
