@@ -1,0 +1,5 @@
+Contact: mailto:security@teamodyssey.space
+Contact: mailto:admin@teamodyssey.space
+Expires: 2027-10-17T18:30:00.000Z
+Preferred-Languages: en
+Canonical: https://teamodyssey.space/.well-known/security.txt
