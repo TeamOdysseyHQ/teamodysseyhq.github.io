@@ -20,6 +20,7 @@ export interface TeamMember {
     github?: string;
     linkedin?: string;
     email?: string;
+    website?: string;
   };
 }
 
@@ -165,8 +166,12 @@ const teamData: Record<string, TeamMember[]> = {
 
   Mentors: [
     {
-      name: 'Dr. Kiran Kumar', role: 'Mentor', speciality: null, about: null, photo: 'default.png',
-      socials: { github: 'https://github.com', linkedin: 'https://linkedin.com', email: 'kiran@rovah.org' }
+      name: 'Dr. D. N. Kiran Pandiri', role: 'Mentor', speciality: null, about: null, photo: 'default.png',
+      socials: { website: 'https://www.amrita.edu/faculty/d-n-kiran-pandiri/' }
+    },
+    {
+      name: 'Dr. Rajesh M', role: 'Mentor', speciality: null, about: null, photo: 'default.png',
+      socials: { website: 'https://www.amrita.edu/faculty/rajesh-m/' }
     },
   ],
 
