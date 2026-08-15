@@ -20,8 +20,8 @@ export const headerData = {
     },
     {
       text: 'Records',
-      href: 'http://records.teamodyssey.space/'
-    }
+      href: '/records',
+    },
   ],
 };
 

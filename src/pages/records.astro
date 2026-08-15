@@ -1,0 +1,38 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { Icon } from 'astro-icon/components';
+
+const metadata = {
+  title: 'Records — Team Odyssey',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="py-12 md:py-16 max-w-lg mx-auto px-4 sm:px-6 text-center">
+    <h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white mb-8">
+      Records
+    </h1>
+
+    <div class="space-y-3">
+      <a
+        href="/"
+        class="flex items-center justify-between p-4 rounded-xl border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-primary dark:hover:border-primary transition group"
+      >
+        <span class="font-semibold text-gray-900 dark:text-white group-hover:text-primary dark:group-hover:text-blue-400 transition-colors">
+          Current Website
+        </span>
+        <Icon name="tabler:chevron-right" class="w-5 h-5 text-gray-400 group-hover:text-primary dark:group-hover:text-blue-400 transition-colors" />
+      </a>
+
+      <a
+        href="/records/archive"
+        class="flex items-center justify-between p-4 rounded-xl border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-primary dark:hover:border-primary transition group"
+      >
+        <span class="font-semibold text-gray-900 dark:text-white group-hover:text-primary dark:group-hover:text-blue-400 transition-colors">
+          Previous Website Archive
+        </span>
+        <Icon name="tabler:chevron-right" class="w-5 h-5 text-gray-400 group-hover:text-primary dark:group-hover:text-blue-400 transition-colors" />
+      </a>
+    </div>
+  </section>
+</Layout>

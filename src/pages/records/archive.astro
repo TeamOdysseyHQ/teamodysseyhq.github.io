@@ -1,0 +1,52 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import { Icon } from 'astro-icon/components';
+
+const metadata = {
+  title: 'Previous Website Archive — Team Odyssey',
+  description: 'Browsing the previous website archive of Team Odyssey.',
+};
+---
+
+<Layout metadata={metadata}>
+  <div class="min-h-screen flex flex-col bg-gray-900 text-white">
+    <!-- Top Pinned Bar for Navigating Back to Current Website -->
+    <header class="sticky top-0 z-50 flex items-center justify-between px-4 py-3 bg-gray-900/95 backdrop-blur-md border-b border-gray-800 shadow-md">
+      <!-- Return to Current Website Button -->
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary/90 transition shadow active:scale-95"
+      >
+        <Icon name="tabler:arrow-left" class="w-4 h-4" />
+        <span>Return to Current Website</span>
+      </a>
+
+      <!-- Title Badge -->
+      <div class="hidden sm:flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+        <span class="text-xs font-semibold text-gray-300">Viewing Previous Website Archive</span>
+      </div>
+
+      <!-- Direct Link to Previous Website Home Page -->
+      <a
+        href="https://2026.teamodyssey.space"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-gray-300 hover:text-white hover:bg-gray-800 transition"
+        title="Open previous website home page directly in new tab"
+      >
+        <span>Open Direct Home</span>
+        <Icon name="tabler:external-link" class="w-3.5 h-3.5" />
+      </a>
+    </header>
+
+    <!-- Legacy Site Frame Container -->
+    <main class="flex-1 w-full relative">
+      <iframe
+        src="https://2026.teamodyssey.space"
+        class="w-full h-[calc(100vh-53px)] border-0"
+        title="Previous Website Archive Home Page"
+      ></iframe>
+    </main>
+  </div>
+</Layout>
